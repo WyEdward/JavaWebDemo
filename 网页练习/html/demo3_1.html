@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul{
+        list-style: none;
+    }
+    .wrap{
+        width: 330px;
+        height: 30px;
+        margin: 100px auto 0;
+        padding-left: 10px;
+        background-color: pink;
+    }
+    .wrap li{
+        background-color: yellowgreen;
+    }
+    .wrap>ul>li{
+        float: left;
+        margin-right: 10px;
+        position: relative;
+    }
+    .wrap a{
+        display: block;
+        width: 100px;
+        height: 30px;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        line-height: 30px;
+    }
+    .wrap li ul{
+        position: absolute;
+        top: 30px;
+        display: none;
+    }
+</style>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        var jpli = $(".wrap>ul>li");
+        jpli.mouseenter(function () {
+            $(this).children("ul").show();
+        });
+        jpli.mouseleave(function () {
+            $(this).children("ul").hide();
+        });
+    });
+</script>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <a href="javascript:void(0);">第一菜单</a>
+                <ul>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                </ul>
+            </li>
+        </ul>
+         <ul>
+            <li>
+                <a href="javascript:void(0);">第一菜单</a>
+                <ul>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                </ul>
+            </li>
+        </ul>
+         <ul>
+            <li>
+                <a href="javascript:void(0);">第一菜单</a>
+                <ul>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                    <li><a href="javascript:void(0);">第二菜单</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type:none;
+        }
+        .wrap{
+            width: 150px;
+            margin: 100px auto 0;
+            border: 1px solid red;
+            text-align: center;
+        }
+        .wrap li{
+            border:1px solid #999;
+            background-color: pink;
+        }
+        .wrap li span{
+            display: block;
+            height:20px;
+            line-height: 20px;
+            font-size: 16px;
+            border-bottom:1px solid #ccc;
+            cursor:pointer;
+        }
+        .wrap li div{
+           height: 200px;
+            background-color: #fff;
+            display: none;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".wrap ul li span").click(function () {
+                $(this).next().show().parent("li").siblings("li").find("div").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>
+                <span class="biaoti">菜单1</span>
+                <div></div>
+            </li>
+            <li>
+                <span class="biaoti">菜单1</span>
+                <div></div>
+            </li>
+            <li>
+                <span class="biaoti">菜单1</span>
+                <div></div>
+            </li>
+            <li>
+                <span class="biaoti">菜单1</span>
+                <div></div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>

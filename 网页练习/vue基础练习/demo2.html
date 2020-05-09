@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--1、导入Vue的包-->
+    <script src="../libs/vue.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <input type="text" value="name">
+        <input type="text" v-bind:value="name">
+        <a v-bind="{href:'http://www.baidu.com/'+path}">超链接</a>
+    </div>
+</body>
+    <script>
+        new Vue({
+            el:'#div1',
+            data:{
+                name: 'smyhvae',
+                path: '2.html'
+            }
+        })
+    </script>
+</html>

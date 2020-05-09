@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见事件</title>
+    <script>
+
+        window.onload=function(){
+            //失去焦点
+           /* document.getElementById("username").onblur=function () {
+                alert("失去焦点了");
+            }
+            //绑定鼠标事件
+            document.getElementById("username").onmouseover=function(){
+                alert("鼠标来了");
+            }*/
+            /*document.getElementById("username").onmousedown=function(event){
+                //alert("鼠标点击了");
+                alert(event.button);
+            }*/
+           /* document.getElementById("username").onkeydown=function(event){
+                //alert("鼠标点击了");
+               // alert(event.keyCode);
+
+                if(event.keyCode==13){
+                    alert("提交表单");
+                }
+            }*/
+            // document.getElementById("city").onchange=function(event){
+            //
+            //     alert("改变了");
+            //
+            // }
+            /*document.getElementById("form").onsubmit=function (event) {
+                var flag=false;
+
+                return flag;
+            }*/
+            function checkForm(){
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+<form action="#" onlick="return checkForm();">
+    <input name="username" id="username">
+    <select id="city">
+        <option>--请选择--</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>西安</option>
+    </select>
+    <input type="submit" value="提交">
+
+</form>
+</body>
+</html>

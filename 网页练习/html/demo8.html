@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            display:none;
+        }
+    </style>
+</head>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        $("#i1").click(function () {
+                $("div").slideDown(2000,function () {
+                    alert("动画执行完毕");
+                });
+        });
+        $("#i2").click(function(){
+                $("div").slideUp(2000,function () {
+                    alert("动画执行完毕");
+                });
+        })
+        $("#i3").click(function(){
+            $("div").slideToggle(2000,function () {
+                    alert("动画执行完毕");
+            });
+
+
+        })
+
+    })
+</script>
+<body>
+    <input type="button" value="下拉" id="i1">
+    <input type="button" value="收回" id="i2">
+    <input type="button" value="切换" id="i3">
+    <div>
+
+    </div>
+
+</body>
+</html>

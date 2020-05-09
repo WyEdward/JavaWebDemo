@@ -1,0 +1,181 @@
+.main{
+    background-color: rgba(218,233,243,0.8);
+}
+.man{
+    height: 700px;
+    /*border: 1px solid red;*/
+    position: relative;
+    background-color: #FFFAFA;
+}
+/*奖章开始*/
+.jz{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid red;*/
+    border-left: 1px solid #ebebeb;
+}
+.jz>span{
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    display: block;
+    height: 60px;
+}
+.jz ul li{
+    border-top: 1px solid #ebebeb;
+    padding-left: 10px;
+    height: 80px;
+}
+
+.jz ul li span{
+    float: right;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+.buttons{
+    width: 220px;
+    height: 30px;
+    margin: 0 auto;
+
+}
+.buttons input{
+    width: 50px;
+    height: 25px;
+    border-radius: 10%;
+}
+/*奖章结束*/
+/*用户个人页面开始*/
+.fx{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 750px;
+    height: 500px;
+    /*border: 1px solid red;*/
+}
+.fx>ul{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 150px;
+    height: 500px;
+    /*border-bottom: 1px solid red;*/
+}
+.fx>ul li{
+    width: 150px;
+    height: 71px;
+    border-bottom: 2px solid #ebebeb;
+    border-right: 1px solid #C6B7B7;
+    text-align: center;
+    line-height: 71px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    cursor: pointer;
+}
+.fx .fxk{
+    display: none;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     width: 596px;
+     height: 500px;
+     /*border: 1px solid red;*/
+ }
+.fx .fxk.selected{
+    display: block;
+}
+.fx .jsqk #ec{
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    width: 500px;
+    height: 420px;
+    /*border: 1px solid red;*/
+}
+.xq{
+    position: absolute;
+    width: 250px;
+    height: 25px;
+    top: 2%;
+    left: 5%;
+    /*border: 1px solid red;*/
+    font-size: 16px;
+    font-family: 微软雅黑;
+}
+/*个人分析开始*/
+.grfx p{
+    width: 300px;
+    height: 500px;
+    margin: 20px auto;
+    font-size: 16px;
+}
+/*个人分析结束*/
+/*历史捐单开始*/
+.lsjd .jslist{
+    width: 420px;
+    height: 450px;
+    margin: 40px auto;
+    /*border: 1px solid red;*/
+}
+.lsjd .jslist span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    border-bottom: 1px solid #ebebeb;
+}
+.lsjd .jslist table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    width: 420px;
+    height: 420px;
+    overflow: auto;
+}
+.lsjd .jslist table tbody{
+    display: block;
+    width: 420px;
+    height: 420px;
+    overflow: auto;
+}
+.lsjd .jslist table tr{
+   border-bottom: 1px solid #ebebeb;
+    width: 400px;
+    height: 42px;
+    margin: 0 auto;
+}
+.lsjd .jslist table tr th,td{
+   float: left;
+    height: 40px;
+    width: 95px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+}
+.lsjd .jslist table tr td{
+    overflow: auto;
+}
+/*.lsjd .jslist ul{
+    width: 400px;
+    height: 420px;
+}
+.lsjd .jslist ul>li{
+    height: 40px;
+    border-bottom: 1px solid red;
+}*/
+    /*历史捐单结束*/
+/*js按钮在上面样式*/
+.enter{
+    background-color: #ebebeb;
+}
+/*用户个人页面结束*/

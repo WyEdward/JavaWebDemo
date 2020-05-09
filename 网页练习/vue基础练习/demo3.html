@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--1、导入Vue的包-->
+    <script src="../libs/vue.js"></script>
+</head>
+    <body>
+    <!--这个div区域就是mvvm中的view-->
+        <div id="div1">
+            {{name}}
+            <button v-on:click="change">改变name的值</button>
+            <button @click="change">改变name的值</button>
+        </div>
+    </body>
+<script>
+    //new出来的对象就是mvvm中的view module
+    new Vue({
+        el:'#div1',
+        data:{//data就是mvvm中的module
+            name:'stsdtds'
+        },
+        //注意，下方这个 `methods` 是Vue中定义方法的关键字，不能改
+        //这个 methods 属性中定义了当前Vue实例所有可用的方法
+        methods:{
+            change:function () {
+                this.name+='1';
+            }
+        }
+    })
+</script>
+</html>

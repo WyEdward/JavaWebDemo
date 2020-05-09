@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--1、导入Vue的包-->
+    <script src="../libs/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>{{msg}}</p>
+        <input type="button" value="跑马灯走起" @click="startMethod">
+        <input type="button" value="跑马灯停止" v-on:click="stopMethod">
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg: 'helloworld世界你好',
+            intervalId:null
+        },
+        methods:{
+            startMethod: function () {
+                if(this.intervalId!=null) return;
+                this.intervalId =setInterval(()=> {
+                    var start = this.msg.substring(0,1);
+                    var end =this.msg.substring(1);
+                    this.msg=end+start;
+                    console.log(this.msg);
+                },400);
+            },
+            stopMethod: function () {
+                // 停止定时器：点击按钮后，停止字符串的滚动
+                clearInterval(this.intervalId);
+                // 每当清除了定时器之后，需要重新把 intervalId 置为 null
+                this.intervalId = null;
+            }
+        }
+    });
+</script>
+</html>

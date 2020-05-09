@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegExp对象</title>
+    <script>
+      var reg=new RegExp("^\\w{6,12}$");
+      var reg2=/^\w{6,12}$/;
+      /*alert(reg);
+      alert(reg2);*/
+    var username="zhangsan";
+    var flag = reg.test(username);
+    alert(flag);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

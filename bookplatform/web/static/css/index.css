@@ -1,0 +1,103 @@
+/*
+* @Author: lenovo
+* @Date:   2019-10-10 22:31:36
+* @Last Modified by:   lenovo
+* @Last Modified time: 2019-10-11 23:24:04
+*/
+
+/* 旧书捐赠开始 */
+.biaoyu{
+	width: 440px;
+	height: 160px;
+	margin-top: 20px;
+}
+.biaoyu b{
+	font-size: 26px;
+	font-family: "微软雅黑";
+	color: #FFF;
+}
+.biaoyu span{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #FFF;
+}
+.biaoyu div+span{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: rgba(255, 255, 255, 0.725);
+}
+.c1{
+	height: 24px;
+}
+
+.sendoldbook{
+	height:560px;
+	padding-top: 20px;
+	background-color: rgb(227,97,97);
+}
+.sendoldbook ul{
+	width: 800px;
+	height: 300px;
+	margin-left: 250px;
+}
+.sendoldbook ul li{
+	float: left;
+	margin-right: 100px;
+}
+.sendoldbook ul li>a{
+	display: block;
+	width: 100px;
+	height: 140px;
+}
+.sendoldbook ul li a span{
+	display: block;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	color: white;
+}
+
+/* 旧书捐赠结束 */
+
+/* 公益服务对象开始*/
+.get_two{
+	height:600px;
+	padding-top: 20px;
+	background: -webkit-linear-gradient(#343537 60%,#FFFFFF 100%);
+	background: -moz-linear-gradient(#343537 60%,#FFFFFF 100%);
+	background: -ms-linear-gradient(#343537 60%,#FFFFFF 100%);
+	background: -o-linear-gradient(#343537 60%,#FFFFFF 100%);
+	background: linear-gradient(#343537 60%,#FFFFFF 100%);
+}
+.get_two ul{
+	width: 1200px;
+	height: 300px;
+	margin-left: 20px;
+}
+.get_two ul li{
+	position: relative;
+	float: left;
+	margin-right: 50px;
+}
+.get_two ul li>a{
+	display: block;
+	width: 244px;
+	height: 352px;
+}
+.get_two ul li a span{
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 244px;
+	height: 70px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	color: white;
+}
+/* 公益服务对象结束*/
+
+

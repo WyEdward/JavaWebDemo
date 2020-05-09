@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .wrap{
+            width: 298px;
+            height:248px;
+            margin: 100px auto 0;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .wrap ul{
+            float: left;
+        }
+        #left li a,#right li a{
+            display: block;
+            width: 48px;
+            height: 27px;
+            text-align: center;
+            line-height: 27px;
+            color: black;
+            border-bottom: 1px solid pink;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function() {
+            $("#left li").mouseenter(function () {
+                $("#center li").eq($(this).index()).show().siblings("li").hide();
+            });
+            $("#right li").mouseenter(function () {
+                $("#center li:eq(" + ($(this).index() + 9) + ")").show().siblings("li").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <ul id="left">
+        <li><a href="#">女靴</a></li>
+        <li><a href="#">雪地靴</a></li>
+        <li><a href="#">冬裙</a></li>
+        <li><a href="#">呢大衣</a></li>
+        <li><a href="#">毛衣</a></li>
+        <li><a href="#">棉服</a></li>
+        <li><a href="#">女裤</a></li>
+        <li><a href="#">羽绒服</a></li>
+        <li><a href="#">牛仔裤</a></li>
+    </ul>
+    <ul id="center">
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangxuan_2.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangxuan_2.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangxuan_2.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangxuan_2.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+        <li><a href="#"><img src="../img/jiangwai_1.jpg" width="200px" height="250px"></img></a></li>
+    </ul>
+    <ul id="right">
+        <li><a href="#">女包</a></li>
+        <li><a href="#">男包</a></li>
+        <li><a href="#">登山鞋</a></li>
+        <li><a href="#">皮带</a></li>
+        <li><a href="#">围巾</a></li>
+        <li><a href="#">皮衣</a></li>
+        <li><a href="#">男毛衣</a></li>
+        <li><a href="#">男棉服</a></li>
+        <li><a href="#">男靴</a></li>
+    </ul>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取数据</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #c0c0c0;
+        }
+
+        th,td{
+            border: 1px solid #d0d0d0;
+            color: #404060;
+            padding: 10px;
+        }
+        th {
+            background-color: #09c;
+            font: bold 16px "微软雅黑";
+            color: #fff;
+        }
+        td {
+            font: 14px "微软雅黑";
+        }
+        tbody tr {
+              background-color: #f0f0f0;
+        }
+        tbody tr:hover {
+            cursor: pointer;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        var data = [{
+            name: "博客园",
+            url: "http://www.cnblogs.com/smyhvae/",
+            type: "程序员的精神家园"
+        }, {
+            name: "简书",
+            url: "https://www.jianshu.com/u/4d2e6b4bf117",
+            type: "写作平台"
+        }, {
+            name: "百度",
+            url: "https://www.baidu.com/",
+            type: "你就知道"
+        }];
+        $("input").click(function () {
+            var str="";
+            for(var i=0;i<data.length;i++){
+               /* str+="<tr><td>"+data[i].name+"</td><td>"+
+                   data[i].url+"</td><td>"+
+                    data[i].type+"</td></tr>";*/
+                str += "<tr><td>"+data[i].name+"</td><td>"+data[i].url+"</td><td>"+data[i].type+"</td></tr>";
+            }
+            $("#t2").html(str);
+        })
+    })
+
+</script>
+<body>
+    <input type="button" value="get">
+    <table>
+        <thead>
+            <tr>
+                <th>标题</th>
+                <th>地址</th>
+                <th>说明</th>
+            </tr>
+        </thead>
+        <tbody id="t2">
+
+        </tbody>
+    </table>
+</body>
+</html>

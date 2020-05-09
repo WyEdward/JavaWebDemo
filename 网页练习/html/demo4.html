@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            var jql1 = $("li:odd");
+            var jql2 = $("li:even");
+            jql1.css("background", "#cccccc");
+            jql2.css("background","white")
+            var color="";
+            $("li").mouseenter(function () {
+                color = $(this).css("background");
+                $(this).css("background","green");
+            });
+            $("li").mouseleave(function () {
+                $(this).css("background",color);
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>生命在于运动</li>
+        <li>生命在于运动</li>
+        <li>生命在于运动</li>
+        <li>生命在于运动</li>
+        <li>生命在于运动</li>
+    </ul>
+</body>
+</html>

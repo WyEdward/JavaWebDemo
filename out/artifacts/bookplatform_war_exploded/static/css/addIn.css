@@ -1,0 +1,70 @@
+.main{
+    height: 650px;
+    background:url("../images/index3.jpg") top no-repeat;
+}
+.login{
+    background-color: rgba(82,245,247,0.5);
+    height: 650px;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+.login>span{
+    position: absolute;
+    font-family: "微软雅黑", serif;
+    font-size: 30px;
+    line-height: 20px;
+    color: red;
+    width: 500px;
+    height: 80px;
+    top: 45%;
+    left:120px;
+    /*border: 1px solid red;*/
+}
+form{
+    background-color: rgba(255,255,255,0.9);
+    position: absolute;
+    width: 360px;
+    height: 420px;
+    padding-top: 10px;
+    /*border: 1px solid red;*/
+    border-radius: 4%;
+    box-shadow: 5px 5px 10px #5A5D5F;
+    top: 100px;
+    right: 100px;
+}
+form p{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 300px;
+    height: 30px;
+}
+form p:last-child{
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+}
+form p:last-child span{
+    display: block;
+    width: 100px;
+    height: 20px;
+}
+form p label{
+    font-size: 20px;
+}
+form p input{
+    width: 200px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 4%;
+}
+form p a{
+    float: right;
+}
+form p input[type='submit']{
+    background-color: #E75F2B;
+    width: 200px;
+    height: 30px;
+    margin-left: 52px;
+}
+
+

@@ -1,0 +1,172 @@
+/* 基金会捐书入口开始*/
+.c1{
+    height: 24px;
+}
+.biaoyu{
+    width: 440px;
+    height: 160px;
+    margin-top: 20px;
+}
+.biaoyu b{
+    font-size: 26px;
+    font-family: "微软雅黑";
+    color: #FFF;
+}
+.biaoyu span{
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #FFF;
+}
+.biaoyu div+span{
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: rgba(255, 255, 255, 0.725);
+}
+
+.get_two{
+    height:600px;
+    padding-top: 20px;
+    background-color: #1b6d85;
+ /*   background: -webkit-linear-gradient(#343537 60%,#FFFFFF 100%);
+    background: -moz-linear-gradient(#343537 60%,#FFFFFF 100%);
+    background: -ms-linear-gradient(#343537 60%,#FFFFFF 100%);
+    background: -o-linear-gradient(#343537 60%,#FFFFFF 100%);
+    background: linear-gradient(#343537 60%,#FFFFFF 100%);*/
+}
+.get_two ul{
+    width: 1200px;
+    height: 300px;
+    margin-left: 20px;
+}
+.get_two ul li{
+    position: relative;
+    float: left;
+    margin-right: 50px;
+}
+.get_two ul li>a{
+    display: block;
+    width: 244px;
+    height: 352px;
+}
+.get_two ul li a span{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 244px;
+    height: 70px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
+}
+/* 基金会捐书入口结束*/
+
+/*爱心书库开始*/
+.booklibrary{
+    height: 700px;
+    background-color: rgba(243,244,235,0.8);
+
+}
+.booklibrary .love_book{
+    height: 620px;
+    padding-top: 30px;
+   /* border: 1px solid red;*/
+}
+.love_book .search{
+    height: 50px;
+}
+.love_book .search span{
+    width: 200px;
+    height: 40px;
+    line-height: 33px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: rgba(255,0,0,0.8);
+}
+.love_book .search input{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    background-color: rgba(243,246,245,0.8);
+    border-radius: 10%;
+}
+.booklibrary .love_book>ul li{
+    float: left;
+}
+.love_book ul:nth-child(2){
+    width: 1100px;
+    height: 500px;
+   /* border: 1px solid red;*/
+    margin: 0 auto;
+  }
+.firstul li{
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    width: 240px;
+    height: 200px;
+    margin-top:30px;
+    margin-right: 25px;
+    position: relative;
+}
+.firstul li p{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 120px;
+    height: 100px;
+}
+.firstul li p span:nth-child(-n+4){
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    width: 150px;
+    height: 20px;
+
+}
+.firstul li>span:nth-child(3){
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    bottom: 2px;
+    right: 2px;
+}
+.firstul li>a{
+    position: absolute;
+    font-size: 16px;
+    color: red;
+    width: 60px;
+    height: 20px;
+    bottom: 10px;
+    left: 40%;
+    border-radius: 1%;
+    cursor: pointer;
+}
+.love_book ul:nth-child(3){
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.secondul li{
+    width: 49px;
+    height: 50px;
+    margin-right: 6px;
+}
+.secondul li input{
+    width: 50px;
+    height: 40px;
+    border: 1px solid red;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    background-color: rgba(243,246,245,0.8);
+    border-radius: 10%;
+}
+/*爱心书库结束*/
+/*爱心基金会开始*/
+.bl2{
+    background-color: rgba(243,244,235,0.8);
+}
+/*爱心基金会结束*/

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--1、导入Vue的包-->
+    <script src="../libs/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form action="#">
+            <input type="text" id="username" v-model="myAccount.username">
+            <input type="password" id="pwd" v-model="myAccount.userpwd">
+            <input type="submit" v-on:click="submit1" value="注册">
+        </form>
+    </div>
+</body>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            name: 'smyhvlkajs',
+            myAccount:{username:'',userpwd:''}
+        },
+        methods:{
+            submit1:function () {
+                alert(this.myAccount.username+" pwd="+this.myAccount.userpwd);
+            }
+        }
+
+    })
+</script>
+</html>

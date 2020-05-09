@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        var u_l = $("ul li");
+        u_l.css("backgroundColor","pink");
+        u_l.css("margin",5);
+        var u_l2 = $("ul>li");
+        u_l2.css("backgroundColor","red");
+    })
+</script>
+<body>
+    <ul>
+        <li>11</li>
+        <li>11</li>
+        <li>11</li>
+        <ol>
+            <li>22</li>
+            <li>22</li>
+            <li>22</li>
+        </ol>
+    </ul>
+</body>
+</html>

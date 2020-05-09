@@ -1,0 +1,73 @@
+.main{
+    background-color: rgba(218,233,243,0.8);
+}
+.man{
+    height: 700px;
+    /*border: 1px solid red;*/
+    position: relative;
+    background-color: #FFFAFA;
+}
+
+/*排行榜开始*/
+.jz{
+    width: 300px;
+    height: 500px;
+    /*border: 1px solid red;*/
+    border-left: 1px solid #ebebeb;
+}
+.jz>span{
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-family: 微软雅黑;
+    display: block;
+    height: 60px;
+}
+.jz ul li{
+    border-top: 1px solid #ebebeb;
+    padding-left: 10px;
+    height: 80px;
+}
+
+.jz ul li span{
+    float: right;
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+.buttons{
+    width: 220px;
+    height: 30px;
+    margin: 0 auto;
+
+}
+.buttons input{
+    width: 50px;
+    height: 25px;
+    border-radius: 10%;
+}
+/*排行榜结束*/
+/*排行榜1开始*/
+.ph1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+/*排行榜1结束*/
+/*排行榜2开始*/
+.ph2{
+    position: absolute;
+    top: 10%;
+    left: 36%;
+}
+/*排行榜2结束*/
+/*排行榜3开始*/
+.ph3{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+/*排行榜3结束*/

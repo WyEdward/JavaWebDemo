@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload=function (ev) {
+        var el = document.getElementById("sendAjax");
+        document.querySelector('input').onclick=function (ev2) {
+            var ajax = new XMLHttpRequest();
+            ajax.open("get","/day14/demo3");
+            ajax.send();
+            ajax.onreadystatechange=function (ev2) {
+                if(ajax.readyState==4&&ajax.status==200){
+                    console.log("success");
+                    console.log(ajax.responseText);
+                    document.querySelector("h1").innerHTML=ajax.responseText;
+                }
+            }
+        }
+
+    }
+</script>
+<body>
+    <h1>发送ajax数据</h1>
+    <input type="submit" value="提交" name="submit" id="sendAjax">
+</body>
+</html>

@@ -1,0 +1,103 @@
+/*名人的书开始*/
+.booklibrary{
+    height: 700px;
+    background-color: rgba(243,244,235,0.7);
+
+}
+.booklibrary .love_book{
+    height: 620px;
+    padding-top: 30px;
+   /* border: 1px solid red;*/
+}
+.love_book .search{
+    height: 50px;
+}
+.love_book .search span{
+    width: 200px;
+    height: 40px;
+    line-height: 33px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: rgba(255,0,0,0.8);
+}
+.love_book .search input{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height: 20px;
+    border: 1px solid red;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    background-color: rgba(243,246,245,0.8);
+    border-radius: 10%;
+}
+.booklibrary .love_book>ul li{
+    float: left;
+}
+.love_book ul:nth-child(2){
+    width: 1100px;
+    height: 500px;
+   /* border: 1px solid red;*/
+    margin: 0 auto;
+  }
+.firstul li{
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    width: 240px;
+    height: 200px;
+    margin-top:30px;
+    margin-right: 25px;
+    position: relative;
+}
+.firstul li p{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 120px;
+    height: 100px;
+}
+.firstul li p span:nth-child(-n+4){
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    width: 150px;
+    height: 20px;
+
+}
+.firstul li>span:nth-child(3){
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    bottom: 2px;
+    right: 2px;
+}
+.firstul li>a{
+    position: absolute;
+    font-size: 16px;
+    color: red;
+    width: 60px;
+    height: 20px;
+    bottom: 10px;
+    left: 40%;
+    border-radius: 1%;
+    cursor: pointer;
+}
+.love_book ul:nth-child(3){
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.secondul li{
+    width: 49px;
+    height: 50px;
+    margin-right: 6px;
+}
+.secondul li input{
+    width: 50px;
+    height: 40px;
+    border: 1px solid red;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    background-color: rgba(243,246,245,0.8);
+    border-radius: 10%;
+}
+/*名人的书结束*/

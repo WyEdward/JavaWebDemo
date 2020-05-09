@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            var json = {"width": 500, "height": 500, "left": 300, "top": 300, "border-radius": 100};
+            var json2 = {
+                "width": 100,
+                "height": 100,
+                "left": 100,
+                "top": 100,
+                "border-radius": 100,
+                "background-color": "red"
+            };
+            $("button").click(function () {
+                $("div").animate(json,1000,function () {
+                    $("div").animate(json2,1000,function () {
+                        alert("动画执行成功");
+                    });
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>自定义动画</button>
+    <div>
+
+    </div>
+</body>
+</html>
